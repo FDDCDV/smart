@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+azure-iot-hub
+azure-iot-device
+azure-storage-blob
+sendgrid
