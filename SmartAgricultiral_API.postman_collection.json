@@ -1,0 +1,109 @@
+{
+  "info": {
+    "name": "PlantGuardian API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /sensor/latest",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/sensor/latest",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "sensor",
+            "latest"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /device/led",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"ON\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/device/led",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "device",
+            "led"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /notifications",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/notifications",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "notifications"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /auto-control",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/auto-control",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "auto-control"
+          ]
+        }
+      }
+    }
+  ]
+}
